@@ -1,0 +1,37 @@
+query,relevant_id
+Could you explain what the Python programming language is?,FAQ-001
+Which terminal command starts a .py file?,FAQ-062
+What does command line interface mean?,FAQ-061
+How can I build a list using a compact for expression?,FAQ-031
+What is the easiest way to test whether a list contains an item?,FAQ-032
+How can I look up a dictionary key without getting a missing key exception?,FAQ-040
+Why does printing something not give the caller a function result?,FAQ-042
+How can I ensure an opened file always closes afterward?,FAQ-047
+How can I read comma separated tabular data in Python?,FAQ-052
+Why should my project have an isolated Python environment?,FAQ-064
+"I installed a package, but my notebook still cannot import it. What happened?",FAQ-077
+Where should configuration values live outside my source code?,FAQ-074
+Is GitHub the same thing as the git version control tool?,FAQ-082
+Why can two branches fail to merge automatically?,FAQ-093
+Why does GitHub reject my push with a permission error?,FAQ-100
+What pandas expression counts nulls for every feature?,FAQ-104
+How can category names be converted to indicator features?,FAQ-116
+Why is it wrong to fit my scaler using the test set?,FAQ-114
+What kind of model is extreme gradient boosting?,FAQ-129
+Why should I compare a complex model to a simple starting prediction?,FAQ-134
+What do you call a model that memorizes training patterns but fails on new examples?,FAQ-132
+Which dataset should I use to choose hyperparameters before final testing?,FAQ-142
+How can I inspect which classes my classifier mixes up?,FAQ-145
+Which retrieval metric averages the inverse rank of the first correct answer?,FAQ-154
+Why reuse a model that was trained on another task?,FAQ-172
+What file lets me resume training from saved parameters?,FAQ-179
+How are gradients propagated backward through a neural network?,FAQ-165
+How can a model locate multiple objects with rectangles inside one image?,FAQ-183
+What AI approach reads characters from a photo?,FAQ-191
+Why can the same car get counted twice after the tracker loses it?,FAQ-194
+How can I compare whether two embedding vectors point in similar directions?,FAQ-205
+Can I find a related answer even when my query uses different words?,FAQ-206
+Is my FAQ retriever writing new responses or returning an existing one?,FAQ-214
+Which lightweight Python tool can expose a prediction endpoint?,FAQ-225
+Where should I put secret tokens instead of committing them?,FAQ-235
+How do I describe the time an API takes to reply?,FAQ-229

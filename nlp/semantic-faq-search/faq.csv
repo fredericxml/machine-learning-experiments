@@ -1,0 +1,241 @@
+id,category,question,answer
+FAQ-001,Python Fundamentals,What is Python?,"Python is a high-level programming language commonly used for scripting, automation, data analysis, and machine learning."
+FAQ-002,Python Fundamentals,What is a Python variable?,"A variable is a name bound to a value, such as a number, string, or list. Python determines its type at runtime."
+FAQ-003,Python Fundamentals,How do I print text in Python?,"Use print() with the string or value you want to display, for example print(""Hello"")."
+FAQ-004,Python Fundamentals,What is the difference between int and float?,"int represents whole numbers, while float represents floating-point values, such as 2.5."
+FAQ-005,Python Fundamentals,How do I get input from the keyboard?,Use input() to read text from a user. Convert the result with int() or float() when a number is required.
+FAQ-006,Python Fundamentals,How do I write a comment in Python?,"Start a single-line comment with #. Use docstrings to document modules, classes, or functions."
+FAQ-007,Python Fundamentals,What does indentation mean in Python?,"Indentation defines code blocks after constructs such as if, for, while, and def. Inconsistent indentation can cause errors."
+FAQ-008,Python Fundamentals,What is a Boolean value?,A Boolean is True or False. Comparisons and many conditional expressions produce Boolean results.
+FAQ-009,Python Fundamentals,How do I compare two values?,"Use comparison operators such as ==, !=, <, >, <=, and >=. Use == to test equality, not =."
+FAQ-010,Python Fundamentals,How does an if statement work?,An if statement executes its indented block when its condition is true. elif and else handle alternative paths.
+FAQ-011,Python Fundamentals,When should I use a for loop?,"Use a for loop to iterate over items in a sequence or another iterable, such as a list or range."
+FAQ-012,Python Fundamentals,When should I use a while loop?,Use a while loop when repetition should continue until a condition changes. Make sure the condition can eventually become false.
+FAQ-013,Python Fundamentals,What is the purpose of range()?,"range() generates an iterable sequence of integers, often used for loop counters."
+FAQ-014,Python Fundamentals,How do I convert a string to an integer?,Call int(text) if the string contains a valid integer representation; otherwise it raises ValueError.
+FAQ-015,Python Fundamentals,What is None in Python?,None represents the absence of a value. Test it with is None rather than == None.
+FAQ-016,Python Fundamentals,What is the difference between = and ==?,"= assigns a value to a name, while == compares two values for equality."
+FAQ-017,Python Fundamentals,How do I format text with variables?,"Use an f-string such as f""Hello, {name}"" to insert expressions into a string."
+FAQ-018,Python Fundamentals,What is a Python module?,"A module is a Python file that can define functions, classes, and variables for reuse through import."
+FAQ-019,Python Fundamentals,What is a traceback?,A traceback shows the call path and line locations associated with an exception. Read its final error message first.
+FAQ-020,Python Fundamentals,How can I see the type of a value?,"Call type(value) to inspect its class. isinstance(value, SomeType) is often better when checking expected types."
+FAQ-021,Python Collections,When should I use a list?,"Use a list for an ordered, mutable collection of values that may contain duplicates."
+FAQ-022,Python Collections,What is the difference between a list and a tuple?,"Lists can be modified after creation, while tuples are immutable sequences."
+FAQ-023,Python Collections,What does a dictionary store?,"A dictionary maps unique hashable keys to values, which is useful for fast lookup by name or identifier."
+FAQ-024,Python Collections,How do I add an item to a list?,Use list.append(item) to add one item or list.extend(items) to add multiple items.
+FAQ-025,Python Collections,How do I remove an item from a list?,"Use list.remove(value) for the first matching value, list.pop(index) for a position, or del for an indexed item."
+FAQ-026,Python Collections,How do I get all dictionary keys?,"Call dictionary.keys() for a view of keys, or iterate directly over the dictionary."
+FAQ-027,Python Collections,Why use a set instead of a list?,A set stores unique hashable items and supports efficient membership tests and set operations.
+FAQ-028,Python Collections,How can I count repeated values in a list?,Use collections.Counter to count occurrences of hashable items.
+FAQ-029,Python Collections,What is list slicing?,"Slicing selects part of a sequence using start:stop:step, such as values[1:5]."
+FAQ-030,Python Collections,How do I sort a list without changing it?,Use sorted(items) to create a sorted list; list.sort() sorts the existing list in place.
+FAQ-031,Python Collections,What is a list comprehension?,"A list comprehension constructs a new list from an iterable, optionally with a filter, such as [x*x for x in numbers]."
+FAQ-032,Python Collections,How do I check if an element exists?,"Use the in operator, for example if item in items:, to test membership."
+FAQ-033,Python Collections,How do I merge two dictionaries?,Use dictionary update methods or the | merge operator in modern Python.
+FAQ-034,Python Collections,Why do dictionaries require hashable keys?,"Dictionary lookup uses hashing, so keys need a stable hash value and equality behavior."
+FAQ-035,Python Collections,What is the difference between shallow and deep copy?,A shallow copy creates a new outer container but shares nested objects. A deep copy recursively copies nested content.
+FAQ-036,Python Collections,How can I iterate with an index and a value?,"Use enumerate(items), which yields an index and corresponding item on each iteration."
+FAQ-037,Python Collections,How can I loop over two lists together?,"Use zip(list_a, list_b) to pair items. Standard zip stops at the shorter iterable."
+FAQ-038,Python Collections,How do I avoid an IndexError?,Check the sequence length or iterate directly over the sequence rather than guessing index positions.
+FAQ-039,Python Collections,When should I use collections.defaultdict?,"Use defaultdict when a missing key should automatically create a default value, such as an empty list or zero."
+FAQ-040,Python Collections,What does dict.get() do?,"dictionary.get(key, default) returns the value or a fallback instead of raising KeyError for a missing key."
+FAQ-041,Functions and Files,How do I define a function?,"Use def followed by a name, parameters, and an indented block. Return a result with return when needed."
+FAQ-042,Functions and Files,What is the difference between return and print?,"return passes a value back to the caller, while print displays text and normally returns None."
+FAQ-043,Functions and Files,What is a default function argument?,A default argument supplies a value when the caller omits a parameter. Avoid mutable values such as [] as defaults.
+FAQ-044,Functions and Files,What do *args and **kwargs mean?,*args collects extra positional arguments into a tuple; **kwargs collects extra named arguments into a dictionary.
+FAQ-045,Functions and Files,What is a lambda function?,"A lambda is a small anonymous function containing a single expression, often used as a key function."
+FAQ-046,Functions and Files,What is variable scope?,"Scope determines where a name can be resolved, such as local function scope or global module scope."
+FAQ-047,Functions and Files,How do I open a text file safely?,"Use with open(path, encoding=""utf-8"") as file: so the file is closed automatically."
+FAQ-048,Functions and Files,How can I read a file line by line?,Iterate over the open file object in a for loop to read lines without loading the whole file at once.
+FAQ-049,Functions and Files,How do I write text to a file?,"Use open(path, ""w"", encoding=""utf-8"") and file.write(text). Write mode replaces existing contents."
+FAQ-050,Functions and Files,What does append mode do?,"Opening a file with ""a"" adds new content to the end without discarding existing content."
+FAQ-051,Functions and Files,What is JSON used for?,JSON is a text format for structured data. Use json.load and json.dump for files in Python.
+FAQ-052,Functions and Files,How do I parse a CSV file?,Use the csv module or pandas.read_csv() depending on whether you need simple rows or tabular analysis.
+FAQ-053,Functions and Files,What is exception handling?,try and except let you respond to expected runtime failures while keeping unrelated errors visible.
+FAQ-054,Functions and Files,When should I raise ValueError?,Raise ValueError when an argument has the right type but an invalid value for the operation.
+FAQ-055,Functions and Files,How do I import a function from another file?,Use from module_name import function_name when that module is available on the Python import path.
+FAQ-056,Functions and Files,What is a docstring?,"A docstring is a string at the beginning of a module, class, or function that explains its purpose and usage."
+FAQ-057,Functions and Files,What is a generator?,"A generator produces values lazily using yield, which can reduce memory use for large sequences."
+FAQ-058,Functions and Files,How do I specify a function type hint?,"Write annotations such as def add(a: int, b: int) -> int:. Python does not enforce these hints automatically."
+FAQ-059,Functions and Files,What is recursion?,Recursion occurs when a function calls itself. It needs a base case to stop repeated calls.
+FAQ-060,Functions and Files,How can I create a reusable Python package?,"Organize modules in a package directory, document dependencies, and use an appropriate pyproject.toml for packaging."
+FAQ-061,CLI and Environments,What is a CLI?,A command-line interface lets users interact with a computer through typed commands rather than graphical controls.
+FAQ-062,CLI and Environments,How do I run a Python program?,"Open a terminal in the project directory and run python filename.py, or python3 filename.py on systems that use that command."
+FAQ-063,CLI and Environments,How do I check my Python version?,Run python --version or python3 --version in a terminal.
+FAQ-064,CLI and Environments,What is a Python virtual environment?,"A virtual environment isolates installed packages from other Python projects, reducing dependency conflicts."
+FAQ-065,CLI and Environments,How do I create a virtual environment?,Run python -m venv .venv and activate it using the command appropriate for your operating system.
+FAQ-066,CLI and Environments,How do I install Python packages?,Use python -m pip install package-name from the environment where you want the package installed.
+FAQ-067,CLI and Environments,How do I save package dependencies?,"Use a requirements.txt file or a project dependency manager, and record versions needed to reproduce your environment."
+FAQ-068,CLI and Environments,What does pwd show?,pwd prints your current directory in Unix-like shells. PowerShell also supports pwd.
+FAQ-069,CLI and Environments,What does cd do in the terminal?,"cd changes the current working directory. For example, cd my-project enters the my-project folder."
+FAQ-070,CLI and Environments,How can I list files in a folder?,Use ls on Unix-like terminals or dir on Windows Command Prompt.
+FAQ-071,CLI and Environments,Why does a command say file not found?,The file may be absent or your working directory may be wrong. Check the path and filename.
+FAQ-072,CLI and Environments,What does a PATH environment variable control?,PATH lists directories that the shell searches when you run commands without full executable paths.
+FAQ-073,CLI and Environments,How do I stop a running command?,Press Ctrl+C in most interactive terminals to interrupt the active process.
+FAQ-074,CLI and Environments,What is an environment variable?,An environment variable stores configuration such as file paths or service URLs outside source code.
+FAQ-075,CLI and Environments,Why should I not commit .env files?,"They may contain API tokens, database passwords, or other configuration secrets that should not be public."
+FAQ-076,CLI and Environments,How do I use a Python notebook locally?,"Install JupyterLab or use an editor with notebook support, then start the notebook in the intended environment."
+FAQ-077,CLI and Environments,Why does pip install succeed but import fail?,pip may have installed into a different Python environment. Check python -m pip and the active interpreter.
+FAQ-078,CLI and Environments,What is the difference between stdout and stderr?,stdout carries normal program output; stderr carries errors and diagnostic messages.
+FAQ-079,CLI and Environments,What does a command exit code mean?,"An exit code indicates how a process finished. Zero usually means success, while nonzero indicates an error."
+FAQ-080,CLI and Environments,When should I use a shell script?,Use a shell script to repeat a known series of commands such as data preparation or tests.
+FAQ-081,Git and GitHub,What is Git?,Git is a version control system that records changes and helps collaborators manage source code history.
+FAQ-082,Git and GitHub,What is the difference between Git and GitHub?,Git manages version history locally; GitHub hosts Git repositories and provides collaboration features.
+FAQ-083,Git and GitHub,How do I initialize a repository?,Run git init inside a project directory to create a local Git repository.
+FAQ-084,Git and GitHub,How do I check which files changed?,"Run git status to see modified, staged, and untracked files."
+FAQ-085,Git and GitHub,What does git add do?,git add stages changes for the next commit; it does not upload them to a remote repository.
+FAQ-086,Git and GitHub,How do I create a commit?,"Stage the intended changes and run git commit -m ""Describe the change""."
+FAQ-087,Git and GitHub,What does git push do?,git push sends local commits from a branch to a configured remote repository.
+FAQ-088,Git and GitHub,What is a Git branch?,"A branch is a movable pointer to a sequence of commits, commonly used for isolated feature work."
+FAQ-089,Git and GitHub,How do I create a new branch?,Run git switch -c feature-name to create and switch to a new branch.
+FAQ-090,Git and GitHub,What is a pull request?,A pull request proposes merging changes from one branch into another and supports review and discussion.
+FAQ-091,Git and GitHub,How do I clone an existing repository?,Run git clone repository-url to create a local copy including its Git history.
+FAQ-092,Git and GitHub,What does git pull do?,git pull fetches remote changes and integrates them into the current local branch.
+FAQ-093,Git and GitHub,What causes a merge conflict?,A conflict happens when Git cannot safely combine overlapping changes without human input.
+FAQ-094,Git and GitHub,How do I ignore generated files?,List file patterns such as .venv/ and __pycache__/ in .gitignore.
+FAQ-095,Git and GitHub,How can I view previous commits?,Use git log --oneline to browse a compact list of commit history.
+FAQ-096,Git and GitHub,What is the difference between merge and rebase?,Merge combines branch histories with a merge commit when needed; rebase replays commits onto a different base.
+FAQ-097,Git and GitHub,How do I undo changes in an uncommitted file?,"Use git restore path/to/file, but confirm the change is disposable because this overwrites working-file edits."
+FAQ-098,Git and GitHub,What does a fork mean on GitHub?,"A fork is a repository copy linked to the original repository, often used for contributions or independent exploration."
+FAQ-099,Git and GitHub,Why should commit messages be descriptive?,A descriptive message helps future readers understand the purpose of a change without opening every diff.
+FAQ-100,Git and GitHub,How can I resolve a 403 error when pushing?,Verify that you authenticated as the account with write access and that the remote URL points to the right repository.
+FAQ-101,Data Analysis,What is NumPy used for?,NumPy provides efficient numerical arrays and mathematical operations commonly used in scientific Python.
+FAQ-102,Data Analysis,What is pandas used for?,"pandas provides DataFrame and Series objects for working with structured, tabular data."
+FAQ-103,Data Analysis,How do I load a CSV with pandas?,"Call pandas.read_csv(path), then inspect the DataFrame with head(), info(), and describe()."
+FAQ-104,Data Analysis,How can I see missing values by column?,Use df.isna().sum() to count missing values in each DataFrame column.
+FAQ-105,Data Analysis,What is exploratory data analysis?,"Exploratory data analysis uses summaries and visualizations to understand distributions, anomalies, and relationships before modeling."
+FAQ-106,Data Analysis,What is the difference between mean and median?,"The mean averages values, while the median is the middle ordered value and is often less sensitive to outliers."
+FAQ-107,Data Analysis,Why are outliers important?,"Outliers may represent errors, unusual events, or meaningful rare cases that influence models and summary statistics."
+FAQ-108,Data Analysis,How do I filter rows in pandas?,"Use a Boolean condition, such as df[df[""age""] >= 18], to select matching rows."
+FAQ-109,Data Analysis,What is groupby in pandas?,"groupby splits data into groups so you can calculate aggregates such as mean, count, or sum per category."
+FAQ-110,Data Analysis,How do I combine DataFrames with a key?,"Use pandas.merge(left, right, on=""key"") and choose a join type suited to the data."
+FAQ-111,Data Analysis,What is a pivot table?,A pivot table summarizes values across rows and columns using an aggregation such as count or mean.
+FAQ-112,Data Analysis,What is data normalization?,Normalization rescales numerical features. The exact transformation depends on the model and what the feature represents.
+FAQ-113,Data Analysis,What is standardization?,"Standardization centers data and scales it by standard deviation, often producing features with mean zero and unit variance."
+FAQ-114,Data Analysis,Why should I fit preprocessing only on training data?,Fitting transformations on validation or test data leaks information and can make evaluation overly optimistic.
+FAQ-115,Data Analysis,What is a categorical feature?,"A categorical feature represents groups or labels, such as city, color, or product type."
+FAQ-116,Data Analysis,What is one-hot encoding?,One-hot encoding represents a categorical value using separate binary indicator columns.
+FAQ-117,Data Analysis,When should I use a histogram?,Use a histogram to inspect the distribution of numerical observations across value intervals.
+FAQ-118,Data Analysis,When should I use a scatter plot?,"Use a scatter plot to look for associations, clusters, or unusual points between two numerical variables."
+FAQ-119,Data Analysis,What is a correlation coefficient?,A correlation coefficient summarizes the direction and strength of an association; it does not establish causation.
+FAQ-120,Data Analysis,Why should I inspect class balance?,Imbalanced class counts may make accuracy misleading and may require different metrics or sampling strategies.
+FAQ-121,Machine Learning Basics,What is machine learning?,Machine learning is a field of AI in which models learn patterns from data to make predictions or support decisions.
+FAQ-122,Machine Learning Basics,What is supervised learning?,"Supervised learning trains on examples paired with known targets, such as prices or class labels."
+FAQ-123,Machine Learning Basics,What is unsupervised learning?,"Unsupervised learning explores patterns without provided target labels, such as clusters in feature space."
+FAQ-124,Machine Learning Basics,What is the difference between regression and classification?,"Regression predicts continuous values, while classification predicts discrete categories or class probabilities."
+FAQ-125,Machine Learning Basics,What is linear regression?,Linear regression predicts a numerical target using a linear combination of input features.
+FAQ-126,Machine Learning Basics,What is logistic regression?,Logistic regression is a classification method that models class probability using a linear score and a link function.
+FAQ-127,Machine Learning Basics,What is a decision tree?,A decision tree splits the feature space using a sequence of simple conditions to predict a target.
+FAQ-128,Machine Learning Basics,What is a random forest?,A random forest combines predictions from many randomized decision trees to reduce variance compared with a single tree.
+FAQ-129,Machine Learning Basics,What is XGBoost?,XGBoost is a gradient boosting library that builds additive tree models and supports regularization and efficient training.
+FAQ-130,Machine Learning Basics,What is K-nearest neighbors?,K-nearest neighbors predicts using the labels or targets of nearby training examples under a chosen distance metric.
+FAQ-131,Machine Learning Basics,What is a support vector machine?,A support vector machine seeks a separating boundary with a large margin and can use kernels for nonlinear patterns.
+FAQ-132,Machine Learning Basics,What is overfitting?,Overfitting occurs when a model learns training-specific patterns that do not generalize to unseen data.
+FAQ-133,Machine Learning Basics,What is underfitting?,Underfitting occurs when a model is too limited or poorly trained to capture relevant patterns in the data.
+FAQ-134,Machine Learning Basics,What is a baseline model?,A baseline is a simple reference method used to judge whether a more complex approach provides a meaningful improvement.
+FAQ-135,Machine Learning Basics,What is feature engineering?,Feature engineering creates or transforms input variables to make useful information more accessible to models.
+FAQ-136,Machine Learning Basics,What is a hyperparameter?,A hyperparameter controls model structure or training behavior and is chosen outside the fitted model parameters.
+FAQ-137,Machine Learning Basics,What is hyperparameter tuning?,Hyperparameter tuning compares settings using a validation strategy to select a useful model configuration.
+FAQ-138,Machine Learning Basics,What does regularization do?,Regularization discourages overly complex parameter values or model behavior to help control overfitting.
+FAQ-139,Machine Learning Basics,Why set a random seed?,A random seed can make data splits and stochastic processes reproducible within the same software and environment.
+FAQ-140,Machine Learning Basics,What is a scikit-learn Pipeline?,A Pipeline chains preprocessing and estimation steps so the same transformations are applied consistently.
+FAQ-141,Model Evaluation,Why split data into train and test sets?,Training data fits the model; a separate test set estimates performance on examples not used during development.
+FAQ-142,Model Evaluation,What is a validation dataset?,A validation dataset helps choose models and hyperparameters without repeatedly using the final test set.
+FAQ-143,Model Evaluation,What is cross-validation?,Cross-validation repeats training and validation across different data folds to estimate performance variability.
+FAQ-144,Model Evaluation,What is data leakage?,Data leakage occurs when information unavailable during real prediction influences training or model selection.
+FAQ-145,Model Evaluation,What is a confusion matrix?,A confusion matrix counts predicted and actual classes to show which classification errors occur.
+FAQ-146,Model Evaluation,What is accuracy in classification?,"Accuracy is the fraction of predictions with the correct class label, but it can hide minority-class failures."
+FAQ-147,Model Evaluation,What is precision?,Precision is the fraction of predicted positive cases that are actually positive.
+FAQ-148,Model Evaluation,What is recall?,Recall is the fraction of actual positive cases that a classifier successfully identifies.
+FAQ-149,Model Evaluation,What is F1 score?,"F1 is the harmonic mean of precision and recall, balancing these two measures for a chosen class."
+FAQ-150,Model Evaluation,What is ROC-AUC?,ROC-AUC measures ranking discrimination across classification thresholds using true-positive and false-positive rates.
+FAQ-151,Model Evaluation,What is mean absolute error?,MAE is the average absolute difference between predicted and actual numerical values.
+FAQ-152,Model Evaluation,What is root mean squared error?,"RMSE is the square root of the average squared prediction error, making it sensitive to large errors."
+FAQ-153,Model Evaluation,What does R-squared measure?,R-squared compares regression error against predicting the target mean; it can be negative on held-out data.
+FAQ-154,Model Evaluation,What is mean reciprocal rank?,Mean reciprocal rank averages 1 divided by the position of the first relevant result across search queries.
+FAQ-155,Model Evaluation,What is Recall at K in search?,Recall@K measures whether relevant results appear among the top K retrieved items; for one relevant item it is equivalent to hit rate.
+FAQ-156,Model Evaluation,What is calibration in classification?,Calibration checks whether predicted probabilities agree with observed event frequencies.
+FAQ-157,Model Evaluation,What is class imbalance?,"Class imbalance means some target categories occur much more often than others, complicating training and evaluation."
+FAQ-158,Model Evaluation,What is a stratified split?,A stratified split attempts to preserve class proportions across training and evaluation subsets.
+FAQ-159,Model Evaluation,Why do repeated test-set comparisons cause problems?,Choosing models based on the test set leaks selection information and makes final test performance optimistic.
+FAQ-160,Model Evaluation,How can I check model robustness?,"Test relevant perturbations, data subsets, and distribution shifts, and report uncertainty instead of one overall score."
+FAQ-161,Deep Learning,What is a neural network?,A neural network combines parameterized layers and nonlinear functions to learn representations from training examples.
+FAQ-162,Deep Learning,What is an epoch?,"An epoch is one complete pass through the training dataset, usually processed in mini-batches."
+FAQ-163,Deep Learning,What is a batch size?,Batch size is the number of samples processed together before a training update or prediction batch.
+FAQ-164,Deep Learning,What is gradient descent?,Gradient descent updates parameters in a direction that reduces the loss estimated from gradients.
+FAQ-165,Deep Learning,What is backpropagation?,Backpropagation computes gradients of model parameters by applying the chain rule backward through operations.
+FAQ-166,Deep Learning,What does a loss function do?,A loss function assigns a numerical penalty to model predictions and guides parameter updates during training.
+FAQ-167,Deep Learning,What is dropout?,Dropout randomly disables activations during training as a regularization technique; it is typically off during inference.
+FAQ-168,Deep Learning,What is batch normalization?,Batch normalization normalizes intermediate activations using batch statistics during training and stored estimates at inference.
+FAQ-169,Deep Learning,What is a learning rate?,The learning rate controls the size of optimizer parameter updates.
+FAQ-170,Deep Learning,What is early stopping?,Early stopping halts training after validation performance stops improving according to a chosen rule.
+FAQ-171,Deep Learning,What is a pretrained model?,A pretrained model has already learned parameters on another dataset or task and can be reused or adapted.
+FAQ-172,Deep Learning,What is transfer learning?,Transfer learning reuses representations learned on an earlier task to improve learning on a related task.
+FAQ-173,Deep Learning,What is fine-tuning?,Fine-tuning continues training some or all parameters of a pretrained model on new task data.
+FAQ-174,Deep Learning,What is inference?,Inference is using a trained model to make predictions without updating its parameters.
+FAQ-175,Deep Learning,What is the difference between CPU and GPU for ML?,GPUs efficiently perform many parallel numerical operations and can accelerate suitable deep learning workloads.
+FAQ-176,Deep Learning,Why do neural networks need nonlinear activations?,Nonlinear activations allow compositions of layers to represent relationships that a single linear mapping cannot express.
+FAQ-177,Deep Learning,What is an embedding?,"An embedding is a learned vector representation of an item, such as a word, sentence, or image."
+FAQ-178,Deep Learning,What is an optimizer?,"An optimizer uses gradient information and an update rule, such as Adam or SGD, to adjust model parameters."
+FAQ-179,Deep Learning,What is a checkpoint?,A checkpoint stores model state and sometimes optimizer state so training or inference can resume.
+FAQ-180,Deep Learning,What is mixed-precision training?,Mixed-precision training uses a combination of numerical precisions to reduce memory use and improve speed when supported.
+FAQ-181,Computer Vision,What is computer vision?,"Computer vision develops algorithms that interpret images and video, such as classifiers, detectors, and trackers."
+FAQ-182,Computer Vision,What is image classification?,Image classification assigns one or more labels to an entire image.
+FAQ-183,Computer Vision,What is object detection?,"Object detection predicts the locations and categories of objects within an image, often using bounding boxes."
+FAQ-184,Computer Vision,What is image segmentation?,"Image segmentation assigns labels to pixels or regions, allowing object boundaries to be represented more precisely."
+FAQ-185,Computer Vision,What is YOLO?,YOLO refers to a family of object detection models designed for efficient image inference.
+FAQ-186,Computer Vision,What is a bounding box?,A bounding box is a rectangle that describes an object location using image coordinates.
+FAQ-187,Computer Vision,What is intersection over union?,Intersection over union measures overlap between predicted and reference regions relative to their combined area.
+FAQ-188,Computer Vision,What is mean average precision in object detection?,mAP averages precision across classes and specified intersection-over-union thresholds.
+FAQ-189,Computer Vision,What is image augmentation?,Image augmentation applies label-preserving transformations such as crops or flips to diversify training examples.
+FAQ-190,Computer Vision,What is a convolutional neural network?,"A CNN uses convolution operations to learn spatial patterns such as edges, textures, and object features."
+FAQ-191,Computer Vision,What is optical character recognition?,OCR extracts written text from images or scanned documents.
+FAQ-192,Computer Vision,What is TrOCR?,TrOCR is a transformer-based approach to recognizing text from image crops.
+FAQ-193,Computer Vision,What is object tracking?,Object tracking links detections across frames to estimate the identity and movement of objects in a video.
+FAQ-194,Computer Vision,Why can tracking IDs change?,"Occlusion, missed detections, or camera changes may cause a tracker to lose an object and assign a new identity."
+FAQ-195,Computer Vision,What is a confusion matrix for images?,An image-classification confusion matrix shows which visual classes a model confuses on evaluated samples.
+FAQ-196,Computer Vision,What is blur detection?,Blur detection estimates loss of image sharpness using learned visual features or measures such as edge variance.
+FAQ-197,Computer Vision,What is the Laplacian variance method?,It estimates sharpness from variation in the Laplacian response; a threshold must be calibrated for the image domain.
+FAQ-198,Computer Vision,What is FFT preprocessing in images?,Fast Fourier Transform converts an image into frequency information that may reveal patterns such as high-frequency detail.
+FAQ-199,Computer Vision,What is domain shift in computer vision?,"Domain shift happens when real input images differ from training data in lighting, cameras, subjects, or other conditions."
+FAQ-200,Computer Vision,What is Teachable Machine?,Teachable Machine is a tool for creating simple machine learning models through example-based training and export.
+FAQ-201,NLP and Semantic Search,What is natural language processing?,"NLP develops methods for analyzing, representing, and generating human language."
+FAQ-202,NLP and Semantic Search,What is text classification?,"Text classification assigns categories to documents or messages, such as spam and non-spam."
+FAQ-203,NLP and Semantic Search,What is tokenization?,"Tokenization splits text into units such as words, subwords, or tokens used by a language model."
+FAQ-204,NLP and Semantic Search,What is TF-IDF?,TF-IDF gives more weight to terms that are informative within a collection rather than common everywhere.
+FAQ-205,NLP and Semantic Search,What is cosine similarity?,Cosine similarity measures directional similarity between vectors by comparing their angle rather than raw magnitude.
+FAQ-206,NLP and Semantic Search,What is semantic search?,Semantic search retrieves items using meaning-oriented representations such as sentence embeddings rather than exact keywords alone.
+FAQ-207,NLP and Semantic Search,What is a sentence embedding model?,A sentence embedding model maps text into vectors so related phrases can be compared or retrieved.
+FAQ-208,NLP and Semantic Search,What is Sentence Transformers?,Sentence Transformers provides models and utilities for generating embeddings and working with semantic similarity tasks.
+FAQ-209,NLP and Semantic Search,Why does semantic search use cosine similarity?,"Cosine similarity ranks vectors by direction, which often works well for normalized text embeddings."
+FAQ-210,NLP and Semantic Search,What is the difference between keyword and semantic search?,Keyword search emphasizes literal term overlap; semantic search can retrieve related phrasing with different words.
+FAQ-211,NLP and Semantic Search,What is a search similarity threshold?,A threshold is a manually or empirically chosen minimum score before returning a result; it is not a calibrated confidence probability.
+FAQ-212,NLP and Semantic Search,What is a top-k retrieval result?,Top-k retrieval returns the k items with the highest relevance scores for a query.
+FAQ-213,NLP and Semantic Search,What is retrieval augmented generation?,RAG retrieves relevant external material and passes it to a generative model to inform its response.
+FAQ-214,NLP and Semantic Search,Does semantic FAQ search generate answers?,Not necessarily. A retrieval-only FAQ search returns stored answers and does not require a generative language model.
+FAQ-215,NLP and Semantic Search,What is a vector database?,"A vector database stores embeddings and provides similarity search, often with metadata filtering and indexing."
+FAQ-216,NLP and Semantic Search,What is a transformer in NLP?,A transformer is a neural architecture built around attention mechanisms for processing token sequences.
+FAQ-217,NLP and Semantic Search,What is attention in a transformer?,Attention lets a model weight information from different token positions when computing representations.
+FAQ-218,NLP and Semantic Search,What is a language model?,A language model estimates patterns in token sequences and can be used for completion or other language tasks.
+FAQ-219,NLP and Semantic Search,Why can text embeddings confuse different questions?,"Closely related topics, ambiguous wording, and limited context can cause different intents to map to similar vectors."
+FAQ-220,NLP and Semantic Search,How do I evaluate semantic retrieval?,"Use held-out queries with known relevant answers and report top-1 accuracy, Recall@K, or mean reciprocal rank."
+FAQ-221,APIs and Deployment,What is an API?,An application programming interface defines how software components request services or exchange data.
+FAQ-222,APIs and Deployment,What is a REST API?,"A REST-style API commonly exposes resources over HTTP using methods such as GET, POST, PUT, and DELETE."
+FAQ-223,APIs and Deployment,What is an HTTP status code?,"An HTTP status code communicates the outcome of a request, such as 200 for success or 404 for not found."
+FAQ-224,APIs and Deployment,What is a JSON request body?,"A JSON request body sends structured fields in an HTTP request, often for API operations that create or update resources."
+FAQ-225,APIs and Deployment,What is Flask?,Flask is a lightweight Python web framework used to build routes and simple web APIs.
+FAQ-226,APIs and Deployment,What is FastAPI?,FastAPI is a Python framework for building APIs with type annotations and automatically generated API documentation.
+FAQ-227,APIs and Deployment,How do I serve a machine learning model?,"Load model artifacts once, validate inputs, run inference, and return well-defined outputs from a service endpoint."
+FAQ-228,APIs and Deployment,Why validate API inputs?,Input validation catches missing fields and invalid formats before data reaches model inference or business logic.
+FAQ-229,APIs and Deployment,What is request latency?,Request latency is the elapsed time from receiving a request to delivering its response.
+FAQ-230,APIs and Deployment,What is throughput?,Throughput measures how many requests or items a system processes per unit of time.
+FAQ-231,APIs and Deployment,What is Docker?,Docker packages software and its dependencies into containers to make environments more consistent across machines.
+FAQ-232,APIs and Deployment,What is a container image?,A container image is a packaged filesystem and configuration used to start a container.
+FAQ-233,APIs and Deployment,What is cloud deployment?,Cloud deployment runs an application or service on infrastructure provided by a cloud platform.
+FAQ-234,APIs and Deployment,What is a model artifact?,A model artifact is a saved representation of trained parameters and sometimes preprocessing components.
+FAQ-235,APIs and Deployment,How do I protect API credentials?,Store secrets in environment variables or a secret manager and avoid embedding them in notebooks or Git commits.
+FAQ-236,APIs and Deployment,Why monitor a deployed model?,"Monitoring helps detect outages, latency changes, drift, and shifts in input or output quality."
+FAQ-237,APIs and Deployment,What is continuous integration?,Continuous integration runs automated checks on code changes to find errors early.
+FAQ-238,APIs and Deployment,What is model drift?,Model drift refers to changes that can reduce model effectiveness as the input distribution or relationships evolve.
+FAQ-239,APIs and Deployment,What is a health-check endpoint?,"A health-check endpoint reports whether a service is running and, when designed appropriately, ready to handle requests."
+FAQ-240,APIs and Deployment,How do I deploy a static portfolio site?,"Static HTML, CSS, and JavaScript sites can be hosted using services such as GitHub Pages without a custom backend."
